@@ -1,0 +1,7 @@
+name: gpu-price-scraper
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python
+  - scrapy
