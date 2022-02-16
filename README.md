@@ -15,4 +15,4 @@ Run:
 scrapy crawl gpu -O data/nvidia.csv
 ```
 
-The output is also available via [Github Pages](http://eckelt.info/gpu-price-scraper/nvidia.csv).
+The output is also available via [Github Pages](http://eckelt.info/gpu-price-scraper/nvidia.csv) (updated daily at 03:20 UTC).
