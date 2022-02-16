@@ -37,3 +37,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.DEPLOY_2_GH_PAGES }}
 
+concurrency: 
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
