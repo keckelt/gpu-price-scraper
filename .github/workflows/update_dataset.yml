@@ -35,7 +35,7 @@ jobs:
       with:
         build_dir: data
       env:
-        GITHUB_TOKEN: ${{ secrets.DEPLOY_2_GH_PAGES }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 concurrency: 
   group: ${{ github.workflow }}-${{ github.ref }}
