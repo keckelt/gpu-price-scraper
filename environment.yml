@@ -5,3 +5,4 @@ channels:
 dependencies:
   - python
   - scrapy
+  - pyOpenSSL==22.0.0
