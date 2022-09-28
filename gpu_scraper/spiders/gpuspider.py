@@ -27,9 +27,9 @@ class GPUSpider(scrapy.Spider):
                 name = post.css('div.bbWrapper').re_first(r'Name: (.*)<br>').strip()
                 price = post.css('div.bbWrapper').re_first(r'Preis: (.*)<br>').replace('€', '').strip()
                 shop = post.css('div.bbWrapper').re_first(r'Shop: (.*)<br>').strip()
-                post_url = base_url + post.css('header ul.message-attribution-main a').attrib['href']
-                datetime = post.css('header ul.message-attribution-main a time').attrib['datetime']
-                post_number = post.css('header ul.message-attribution-opposite li:last-child a::text').get().replace('#', '').strip()
+                post_url = base_url + post.css('header_1 ul.message-attribution-main a').attrib['href']
+                datetime = post.css('header_1 ul.message-attribution-main a time').attrib['datetime']
+                post_number = post.css('header_1 ul.message-attribution-opposite li:last-child a::text').get().replace('#', '').strip()
 
                 model = ''
                 for thread_model, thread_url in threads.items():
