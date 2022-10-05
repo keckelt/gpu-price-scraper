@@ -3,9 +3,9 @@ name: Crawl on Push and Schedule
 on:
   push:
     branches: [ main ]
-  schedule:
-    # * is a special character in YAML so you have to quote this string
-    - cron:  '20 3 * * *'
+#  schedule:
+#    # * is a special character in YAML so you have to quote this string
+#    - cron:  '20 3 * * *'
 
 jobs:
   build:
